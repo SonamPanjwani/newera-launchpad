@@ -1,11 +1,13 @@
 export type Course = {
-  id: string;
+  id: "full-stack" | "ai-automation" | "data-science-ai";
   title: string;
   description: string;
   skills: string[];
   duration: string;
   level: string;
   projectCount: string;
+  projectFocus: string;
+  ctaLabel: string;
 };
 
 export type Instructor = {
@@ -64,29 +66,35 @@ export const courses: Course[] = [
   {
     id: "full-stack",
     title: "Full Stack Web Development",
-    description: "Design and ship modern web products from interface to infrastructure.",
-    skills: ["React", "TypeScript", "Node.js"],
-    duration: "To be confirmed",
-    level: "Beginner to advanced",
-    projectCount: "To be confirmed",
+    description: "Design, build, and deploy complete web products—from responsive interfaces to secure APIs and production databases.",
+    skills: ["HTML & CSS", "JavaScript", "React", "TypeScript", "Node.js", "PostgreSQL", "Git & GitHub", "Docker"],
+    duration: "6 months",
+    level: "Level 1",
+    projectCount: "Project-based",
+    projectFocus: "Build and deploy a full-stack product with authentication, data, APIs, and a responsive interface.",
+    ctaLabel: "View Full Stack Project",
   },
   {
     id: "ai-automation",
     title: "AI Automation",
-    description: "Build useful automations, agents, and connected AI workflows.",
-    skills: ["n8n", "APIs", "AI agents"],
-    duration: "To be confirmed",
-    level: "Beginner to intermediate",
-    projectCount: "To be confirmed",
+    description: "Create reliable AI-powered automations, connected workflows, and practical agents that solve real operational problems.",
+    skills: ["n8n", "REST APIs", "Webhooks", "OpenAI APIs", "Claude APIs", "Prompt design", "AI agents", "Workflow testing"],
+    duration: "6 months",
+    level: "Level 2",
+    projectCount: "Project-based",
+    projectFocus: "Design a multi-step AI workflow that connects services, handles data, and automates a repeatable business process.",
+    ctaLabel: "View Automation Project",
   },
   {
     id: "data-science-ai",
     title: "Data Science & AI",
-    description: "Turn data into models, decisions, and intelligent applications.",
-    skills: ["Python", "Machine learning", "Data"],
-    duration: "To be confirmed",
-    level: "Beginner to advanced",
-    projectCount: "To be confirmed",
+    description: "Explore, model, and communicate data while building intelligent applications with modern machine-learning workflows.",
+    skills: ["Python", "SQL", "Pandas", "NumPy", "Data visualization", "scikit-learn", "Machine learning", "Model evaluation"],
+    duration: "6 months",
+    level: "Level 3",
+    projectCount: "Project-based",
+    projectFocus: "Take a real dataset from exploration to a tested predictive model and present the insights in an interactive application.",
+    ctaLabel: "View Data & AI Project",
   },
 ];
 
